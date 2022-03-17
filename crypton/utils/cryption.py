@@ -1,0 +1,28 @@
+from typing import Callable
+from crypton.utils.math import modulo
+from functools import partial
+from crypton.utils.space import convert_space_index_to_int
+from typing import Callable, Collection
+
+
+def apply_func_to_char(a: int, b: int, c: int, f: Callable, mod: int = 26) -> int:
+    result = f(c)
+
+    return modulo(result, mod)
+
+
+def encrypt_decrypt_helper(
+    plain_text: str, a: int, b: int, f: Callable, space: Collection
+) -> str:
+
+    encrypt_func = partial(apply_func_to_char, a, b, f=f(a, b), mod=len(space))
+
+    text_as_list_of_ints = list(
+        map(partial(convert_space_index_to_int, space=space), plain_text)
+    )
+
+    result_as_list_of_ints = list(map(encrypt_func, text_as_list_of_ints))
+
+    result_as_list_of_strs = list(map(lambda x: space[x], result_as_list_of_ints))
+
+    return "".join(result_as_list_of_strs)
