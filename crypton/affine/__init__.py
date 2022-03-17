@@ -1,2 +1,2 @@
-from .lib.decrypt import decrypt
-from .lib.encrypt import encrypt
+from .src.decrypt import decrypt
+from .src.encrypt import encrypt
