@@ -26,3 +26,6 @@ def encrypt_decrypt_helper(
     result_as_list_of_strs = list(map(lambda x: space[x], result_as_list_of_ints))
 
     return "".join(result_as_list_of_strs)
+
+def get_pairs_of_int_two_from_text(text, space):
+    return [[space.index(text[i]), space.index(text[i+1])] for i in range(0, len(text)-1, 2)]
