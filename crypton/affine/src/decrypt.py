@@ -1,9 +1,9 @@
-from typing import Callable, Collection
+from typing import Callable, Sequence
 from crypton.utils.cryption import encrypt_decrypt_helper
 from crypton.utils.math import get_reverse_modulus
 
 
-def decrypt(plain_text: str, a: int, b: int, space: Collection) -> str:
+def decrypt(plain_text: str, a: int, b: int, space: Sequence) -> str:
 
     return encrypt_decrypt_helper(plain_text, a, b, get_decrypt_function, space)
 
