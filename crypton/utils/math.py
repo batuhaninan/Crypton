@@ -52,13 +52,13 @@ def get_inverse_matrix(matrix: np.ndarray) -> List:
 
 def apply_function_and_flatten_matrices(
     a: np.ndarray, b: np.ndarray, function: Callable
-) -> List[int, int]:
+) -> List[int]:
     flat_matrix = function(a, b)
 
     return [flat_matrix[0, 0], flat_matrix[1, 1]]
 
 
-def add_matrices_and_flatten(a: np.ndarray, b: np.ndarray) -> List[int, int]:
+def add_matrices_and_flatten(a: np.ndarray, b: np.ndarray) -> List[int]:
     return apply_function_and_flatten_matrices(a, b, np.add)
 
 
