@@ -1,11 +1,10 @@
-import imp
 import unittest
 import string
 
 from crypton.affine import decrypt
 
 
-class TestDecrypt(unittest.TestCase):
+class TestAffineDecrypt(unittest.TestCase):
     def test_long_text(self):
         space = string.ascii_lowercase
 

@@ -4,7 +4,7 @@ import string
 from crypton.affine import encrypt
 
 
-class TestDecrypt(unittest.TestCase):
+class TestAffineEncrypt(unittest.TestCase):
     def test_long_text(self):
         space = string.ascii_lowercase
 
