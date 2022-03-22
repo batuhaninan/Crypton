@@ -22,7 +22,3 @@ class TestAffineDecrypt(unittest.TestCase):
         result = decrypt("yvtre", 3, 5, space)
 
         self.assertEqual(result, "power")
-
-
-if __name__ == "__main__":
-    unittest.main()
