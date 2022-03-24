@@ -1,5 +1,3 @@
-from typing import Sequence
-
 import numpy as np
 
 from crypton.utils import cryption as cryption_utils
@@ -7,7 +5,7 @@ from crypton.utils import space as space_utils
 from crypton.utils import math as math_utils
 
 
-def decrypt(text: str, a: np.ndarray, b: np.ndarray, space: Sequence) -> str:
+def decrypt(text: str, a: np.ndarray, b: np.ndarray, space: str) -> str:
     result = []
 
     t = math_utils.get_inverse_matrix(a)

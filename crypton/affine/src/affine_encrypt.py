@@ -1,8 +1,8 @@
-from typing import Callable, Sequence
+from typing import Callable
 from crypton.utils.cryption import encrypt_decrypt_helper
 
 
-def encrypt(plain_text: str, a: int, b: int, space: Sequence) -> str:
+def encrypt(plain_text: str, a: int, b: int, space: str) -> str:
 
     return encrypt_decrypt_helper(plain_text, a, b, get_encrypt_function, space)
 
