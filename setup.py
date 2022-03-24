@@ -1,9 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
-setup(
-    name="crypton",
-    version="1.0",
-    author="Batuhan Inan",
-    author_email="inanbatuhan61@gmail.com",
-    packages=find_packages(),
-)
+if __name__ == "__main__":
+    setup()
