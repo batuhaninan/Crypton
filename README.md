@@ -4,6 +4,10 @@
 
 ![Tests](https://github.com/batuhaninan/Crypton/actions/workflows/tests.yml/badge.svg)
 
+## Python
+
+You need Python 3.7+ to use Crypton
+
 ## Install Dependencies
 ```bash
 pip install .
