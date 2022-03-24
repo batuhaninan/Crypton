@@ -4,12 +4,20 @@
 
 ![Tests](https://github.com/batuhaninan/Crypton/actions/workflows/tests.yml/badge.svg)
 
-You can use the following command to run the tests:
-
+## Install Dependencies
 ```bash
-python -m unittest discover
+pip install .
 ```
 
+## Install Dev Dependencies (for running tests)
+```bash
+pip install -r dev_requirements.txt
+```
+
+## Run Tests
+```bash
+pytest
+```
 
 
 ## Authors
