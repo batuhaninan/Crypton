@@ -1,2 +1,2 @@
-from .src.encrypt import encrypt
-from .src.decrypt import decrypt
+from .src.block_encrypt import encrypt
+from .src.block_decrypt import decrypt
