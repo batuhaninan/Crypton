@@ -1,4 +1,4 @@
-from typing import List, Callable, Sequence
+from typing import List, Callable
 
 import numpy as np
 
@@ -62,5 +62,5 @@ def add_matrices_and_flatten(a: np.ndarray, b: np.ndarray) -> List[int]:
     return apply_function_and_flatten_matrices(a, b, np.add)
 
 
-def sub_matrices(a: Sequence, b: np.ndarray) -> np.ndarray:
+def sub_matrices(a: np.ndarray, b: np.ndarray) -> np.ndarray:
     return a - b
