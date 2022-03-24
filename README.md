@@ -15,7 +15,7 @@ pip install .
 
 ## Install Dev Dependencies (for running tests)
 ```bash
-pip install -r dev_requirements.txt
+pip install -r requirements_dev.txt
 ```
 
 ## Run Tests
