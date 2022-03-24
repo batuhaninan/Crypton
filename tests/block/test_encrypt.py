@@ -41,7 +41,3 @@ class TestBlockEncrypt(unittest.TestCase):
         encrypted_text = encrypt("stopxglobalykqrmingz", a, b, space)
 
         self.assertEqual(encrypted_text, "aceimzizqpadrdyfmqiw")
-
-
-if __name__ == "__main__":
-    unittest.main()
