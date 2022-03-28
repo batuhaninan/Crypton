@@ -10,9 +10,26 @@ __all__ = [
 ]
 
 
-def encrypt(text: str, a: np.ndarray, b: np.ndarray, space: str) -> str:
+def encrypt(plain_text: str, a: np.ndarray, b: np.ndarray, space: str) -> str:
+	"""Encrypts the given text with given a, b and space
+
+	:param plain_text: Text you want to encrypt
+	:type plain_text: str
+
+	:param a: An integer that corresponds to the A parameter in block cypher
+	:type a: np.ndarray
+
+	:param b: An integer that corresponds to the B parameter in block cypher
+	:type b: np.ndarray
+
+	:param space: Target space
+	:type space: str
+
+	:return: Encrypted text in string form
+	:rtype: str
+	"""
 	result = []
-	pairs = cryption_utils.get_pairs_of_int_two_from_text(text, space)
+	pairs = cryption_utils.get_pairs_of_int_two_from_text(plain_text, space)
 
 	for pair in pairs:
 		a_times_pair = np.dot(a, pair)
