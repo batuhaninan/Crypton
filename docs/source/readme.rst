@@ -1,0 +1,4 @@
+Crypton
+-----------
+
+.. include:: ../README.rst
