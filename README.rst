@@ -1,4 +1,4 @@
-.. centered:: Affine & Block Cypher Implementations With Python
+Affine & Block Cypher Implementations With Python
 
 
 .. image:: https://github.com/batuhaninan/Crypton/actions/workflows/tests.yml/badge.svg
